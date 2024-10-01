@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// 4. https://leetcode.com/problems/build-array-from-permutation/
+// 4. Build Array from Permutation
+// https://leetcode.com/problems/build-array-from-permutation/
 
 func main() {
 	fmt.Println(buildArray([]int{5, 0, 1, 2, 3, 4}))

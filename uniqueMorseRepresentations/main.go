@@ -5,7 +5,8 @@ import (
 	"strings"
 )
 
-// 6. https://leetcode.com/problems/unique-morse-code-words/
+// 6. Unique Morse Code Words
+// https://leetcode.com/problems/unique-morse-code-words/
 
 func main() {
 	fmt.Println(toMorse("sos"))

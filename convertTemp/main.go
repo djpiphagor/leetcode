@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// 3. https://leetcode.com/problems/convert-the-temperature/
+// 3. Convert the Temperature
+// https://leetcode.com/problems/convert-the-temperature/
 
 func main() {
 	fmt.Println(convertTemperature(122.11))

@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-// 5. https://leetcode.com/problems/count-of-matches-in-tournament/
+// 5. Count of Matches in Tournament
+// https://leetcode.com/problems/count-of-matches-in-tournament/
 
 func main() {
 	fmt.Println(numberOfMatches(7))
