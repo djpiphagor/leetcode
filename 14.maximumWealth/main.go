@@ -6,7 +6,7 @@ import "fmt"
 //https://leetcode.com/problems/richest-customer-wealth/
 
 func main() {
-	fmt.Println(maximumWealth([][]int{[]int{2, 8, 7}, []int{7, 1, 3}, []int{1, 9, 5}}))
+	fmt.Println(maximumWealth([][]int{{2, 8, 7}, {7, 1, 3}, {1, 9, 5}}))
 }
 
 func maximumWealth(accounts [][]int) int {
