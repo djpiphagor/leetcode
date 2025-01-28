@@ -1,1 +1,3 @@
 https://github.com/ptflp/kata_tasks
+clone here:
+https://gitlab.com/ruzhukov/kata-tasks-leetcode
