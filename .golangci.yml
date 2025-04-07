@@ -1,0 +1,73 @@
+version: "2"
+---
+run:
+  concurency: 4
+  deadline: 2m
+  issues-exit-code: 1
+  tests: true
+  build-tags:
+    - integration
+  skip-dirs:
+    - bin
+    - vendor
+    - var
+    - tmp
+    - internal/generated
+
+output:
+  format: tab
+  print-issued-lines: true
+  print-linter-name: true
+
+linters:
+  disable-all: true
+  enable:
+    - govet
+    - bidichk
+    - errcheck
+    - ineffassign
+    - typecheck
+    - unused
+    - goconst
+    - gosec
+    - goimports
+    - gosimple
+    - bodyclose
+    - staticcheck
+    - execinquery
+    - rowserrcheck
+    - sqlclosecheck
+    - exportloopref
+    - gocritic
+    - predeclared
+    - errchkjson
+    - noctx
+    - thelper
+    - testifylint
+    - perfsprint
+    - inamedparam
+    - paralleltest
+  fast: true
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 100
+  max-same-issues: 4
+  new: false
+  exclude-rules:
+    - path: (.+)_test.go
+      linters:
+        - goconst
+        - noctx
+        - gocritic
+        - errcheck
+        - gosec
+
+linters-settings:
+  goconst:
+    min-len: 2
+    min-occurrences: 5
+    ignore-tests: false
+  paralleltest:
+    ignore-missing: true
+    ignore-missing-subtests: true
